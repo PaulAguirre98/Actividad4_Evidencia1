@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<RelativeLayout
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consulta Curp "/>
+    <EditText
+        android:id="@+id/CV"
+       android:hint="Codigo de verificación"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"/>
+    <EditText
+        android:id="@+id/PA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="primer appellido"
+        android:layout_below="@+id/CV"/>
+<EditText
+    android:id="@+id/SA"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Segundo apellido"
+    android:layout_below="@+id/PA"
+    />
+    <EditText
+        android:id="@+id/Nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SA"
+        android:hint="Nombres "/>
+
+    <TextView
+        android:id="@+id/SX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Nom"
+        android:text="Genero" />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/SX"
+        android:id="@+id/Gen">
+
+        <RadioButton
+            android:id="@+id/Hombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Hombre" />
+
+        <RadioButton
+            android:id="@+id/Mujer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Mujer" />
+    </RadioGroup>
+    <TextView
+        android:layout_below="@+id/Gen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:text="Fecha de nacimiento"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fecha"
+        android:hint="dd-mm-aa"
+        android:layout_below="@+id/date"
+        />
+
+
+    <TextView
+        android:id="@+id/EF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entidad Federativa"
+        android:layout_below="@+id/fecha" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:id="@+id/spn"
+       android:layout_below="@+id/EF" >
+    </Spinner>
+    <Button
+        android:id="@+id/bot"
+        android:layout_below="@+id/spn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Limpiar"
+        />
+
+    <Button
+        android:id="@+id/bot1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="107dp"
+        android:text="BUSCAR" />
+
+
+</RelativeLayout>
+</ScrollView>

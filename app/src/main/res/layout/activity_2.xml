@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Curp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DATOS"/>
+        <TextView
+            android:id="@+id/Papellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/Curp"
+            />
+        <TextView
+            android:id="@+id/Sapellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/Papellido"
+            />
+        <TextView
+            android:id="@+id/Nombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Sapellido"
+            />
+        <TextView
+            android:id="@+id/Genero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/Nombres"
+            />
+        <TextView
+            android:id="@+id/Fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/Genero"
+            />
+        <TextView
+            android:id="@+id/EF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Fecha"
+            />
+
+
+        <TextView
+            android:id="@+id/Cur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EF"
+            android:text=""/>
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
